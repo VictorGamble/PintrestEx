@@ -1,0 +1,32 @@
+.wrapper{
+    /*nothing inside the wrapper will go outside of the below dimensions */
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.container{
+    /*turns the display into a flexbox*/
+    display: flex;
+    /*removes bullet points*/
+    list-style: none;
+    /*allows the content in the container to wrap when needed*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*gives everything in the container a length of 1rem and allows the % to calculate itself(auto) */
+    margin: 1rem auto;
+    /*removes all padding*/
+    padding: 0;
+
+}
+
+.container .photo{
+    border: 1px solid blue;
+    flex: 1 0 150pxpx;
+    margin: 2px;
+    max-width: 320px;
+}
+
+.photo img{
+    height: 100%;
+    width: 100%;
+}
